@@ -75,7 +75,7 @@
     <main>
         <article>
             <!-- hero section -->
-            <div class="hero has-before">
+            <div class="hero has-before" aria-labelledby="hero" id="home">
                 <div class="container">
                     <p class="subtitle">
                         Enjoy the games
@@ -89,43 +89,139 @@
                         Join Us
                     </a>
 
-                    <div class="hero-banner">
+                    <div class="banner">
                         <img src="./assets/images/hero-banner.png" alt="hero banner"
                         width="800" height="400" class="w-100">
 
                         <img src="./assets/images/hero-banner-bg.png" alt="hero background"
-                        class="hero-banner-bg">
+                        class="banner-bg">
                     </div>
                 </div>
             </div>
 
-            <!-- upcoming -->
-            <div class="upcoming">
+            <!-- lineup -->
+            <section class="section lineup" aria-labelledby="lineup-label" id="tournament">
                 <div class="container">
-                    <div class="">
-                        <p>Upcoming Matches</p>
-                        <p>Battles Extreme Masters <span>Tournament</span></p>
-                        <p>
-                            Our success in creating business solutions is due in large part to our talented and highly committed team.
-                        </p>
-                    </div>
+                    
+                    <p class="subtitle" id="lineup-label" data-reveal="bottom" >
+                        lineup Matches
+                    </p>
+                    <h2 class="title" data-reveal="bottom">
+                        Battles Extreme Masters <span>Tournament</span>
+                    </h2>
+                    <p class="text" data-reveal="bottom">
+                        Our success in creating business solutions is due in large part 
+                        to our talented and highly committed team.
+                    </p>
+                    
+                    <ul class="lineupList">
+                        <li class="lineupItem">
+                            <div class="lineupCard left has-before" data-reveal="left">
+                                <img src="./assets/images/team-logo-2.png" alt="Purple Death Cadets" 
+                                width="80" height="75" loading="lazy" class="banner">
 
-                    <div class="">
-                        <div>
-                            <img src="./assets/images/team-logo-1.png" alt="Purple Death Cadets">
-                            <p>Purple Death Cadets</p>
-                            <h2>Group 04 | Match 06th</h2>
-                        </div>
+                                <h3 class="card-title">Purple Death Cadets</h3>
 
-                        <div class="">
-                            
-                        </div>
-                
-                    </div>
+                                <div class="card-meta">Group 04 | Match 06th</div>
+                            </div>
 
+                            <div class="lineup-time" data-reveal="bottom">
+                                <time class="time" datetime="10:00">10:00</time>
+                                <time class="time" datetime="25-07-2023">25TH May 2024</time>
 
+                                <div class="socials">
+                                    <a href="" class="socialLink">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+
+                                    <a href="" class="socialLink">
+                                        <ion-icon name="logo-twitch"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="lineupCard left has-before" data-reveal="right">
+                                <img src="./assets/images/team-logo-1.png" alt="Trigger Brain Squad" 
+                                width="80" height="75" loading="lazy" class="banner">
+
+                                <h3 class="card-title">Trigger Brain Squad</h3>
+
+                                <div class="card-meta">Group 04 | Match 06th</div>
+                            </div>
+                        </li>
+
+                        <li class="lineupItem">
+                            <div class="lineupCard left has-before" data-reveal="left">
+                                <img src="./assets/images/team-logo-3.png" alt="The Black Hat Hackers" 
+                                width="80" height="75" loading="lazy" class="banner">
+
+                                <h3 class="card-title">The Black Hat Hackers</h3>
+
+                                <div class="card-meta">Group 05 | Match 02nd</div>
+                            </div>
+
+                            <div class="lineup-time" data-reveal="bottom">
+                                <time class="time" datetime="12:30">10:00</time>
+                                <time class="time" datetime="20-06-2023">20TH June 2023</time>
+
+                                <div class="socials">
+                                    <a href="" class="socialLink">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+
+                                    <a href="" class="socialLink">
+                                        <ion-icon name="logo-twitch"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="lineupCard left has-before" data-reveal="right">
+                                <img src="./assets/images/team-logo-4.png" alt="Your Worst Nightmare" 
+                                width="80" height="75" loading="lazy" class="banner">
+
+                                <h3 class="card-title">Your Worst Nightmare</h3>
+
+                                <div class="card-meta">Group 05 | Match 02nd</div>
+                            </div>
+                        </li>
+
+                        <li class="lineupItem">
+                            <div class="lineupCard left has-before" data-reveal="left">
+                                <img src="./assets/images/team-logo-5.png" alt="Witches And Quizards" 
+                                width="80" height="75" loading="lazy" class="banner">
+
+                                <h3 class="card-title">Witches And Quizards</h3>
+
+                                <div class="card-meta">Group 02 | Match 03rd</div>
+                            </div>
+
+                            <div class="lineup-time" data-reveal="bottom">
+                                <time class="time" datetime="04:20">10:00</time>
+                                <time class="time" datetime="15-12-2023">15th Dec 2023</time>
+
+                                <div class="socials">
+                                    <a href="" class="socialLink">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+
+                                    <a href="" class="socialLink">
+                                        <ion-icon name="logo-twitch"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="lineupCard left has-before" data-reveal="right">
+                                <img src="./assets/images/team-logo-6.png" alt="Resting Bitch Faces" 
+                                width="80" height="75" loading="lazy" class="banner">
+
+                                <h3 class="card-title">Resting Bitch Faces</h3>
+
+                                <div class="card-meta">Group 02 | Match 03rd</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
         </article>
     </main>
     <!--script  -->
