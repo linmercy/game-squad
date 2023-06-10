@@ -23,6 +23,7 @@ const closeLinks = () => {
 
 addEventOnElements(navLinks, "click", closeLinks) 
 
+// show header after 100px scroll
 const header = document.querySelector("[data-header]")
 const activeElements = function () {
     if (window.scrollY > 100){
@@ -34,3 +35,13 @@ const activeElements = function () {
 }
 
 window.addEventListener("scroll", activeElements)
+
+// adding ripple effect on button
+const btn = document.querySelectorAll("[data-btn]")
+const btnRipple = function (event) {
+    this.style.setProperty("--top", `${event.offsetY}px`)
+    this.style.setProperty("--left", `${event.offsetX}px`)
+}
+
+addEventOnElements(btn, "mousemove", btnRipple)
+
