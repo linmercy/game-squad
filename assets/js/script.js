@@ -58,4 +58,17 @@ const showBtn = function () {
 
 window.addEventListener("scroll", showBtn)
 
+//reveal lineup on scroll
+const revealElements = document.querySelectorAll("[data-reveal]")
+const revealElementsOnScroll = function () {
+    for (let i = 0, len = revealElements.length; i < len; i++ ){
+        const isElementInWindow = revealElements[i].getBoundingClientRect().top < window.innerHeight / 1.1;
 
+        if (isElementInWindow){
+            revealElements[i].classList.add("revealed")
+        }
+    }
+}
+
+window.addEventListener("scroll", revealElementsOnScroll)
+window.addEventListener("load", revealElementsOnScroll)
