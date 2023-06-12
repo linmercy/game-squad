@@ -965,11 +965,69 @@ font-size: var(--fontSize-3);
 @media (min-width: 990px){
   :root{
     --fontSize-2: 4.5rem;
+    --section-spacing: 100px;
+  }
+
+  h2{
+    line-height: 1.1;
   }
 
   .header{
     .container{
       max-width: 960px;
+    }
+  }
+  .hero{
+    .container{
+      .banner{
+        .banner-bg{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .lineup{
+    .container{
+      .lineupList{
+        .lineupItem{
+          display: grid;
+          grid-template-columns: 1fr 0.5fr 1fr;
+          align-items: center;
+
+          .lineupCard{
+            .card-meta{
+              left: 50%;
+              bottom: -30px;
+              transform: translateX(-50%);
+            }
+          }
+
+          .lineupCard.right{
+            .card-meta{
+              left: 50%;
+            }
+          }
+
+          .lineup-time{
+            margin-block: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .news{
+    .container{
+      .newsList{
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  .footer{
+    .container{
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }
