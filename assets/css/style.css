@@ -794,12 +794,43 @@ font-size: var(--fontSize-3);
       }
     } 
   }
+
+  .lineup{
+   .container{
+    .lineupList{
+      .lineupItem{
+        .lineupCard.left{
+          .card-meta{
+            left: auto;
+            right: -15%;
+          }
+        }
+
+        .lineupCard.right{
+          .card-meta{
+            left: 25%;
+          }
+        }
+      }
+    }
+   }
+  }
+
+  .footer{
+    .container{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 @media (min-width: 768px){
   :root{
     --fontSize-1: 6.5rem;
     --fontSize-2: 3.2rem;
+  }
+
+  h1{
+    line-height: 1;
   }
 
   .header{
