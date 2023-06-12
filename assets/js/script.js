@@ -30,13 +30,13 @@ const activeElements = function () {
         header.classList.add("active")
     } 
     else{
-        header.classList.remove("active",)
+        header.classList.remove("active")
     }
 }
 
 window.addEventListener("scroll", activeElements)
 
-// adding ripple effect on button
+// adding ripple effect on buttons
 const btn = document.querySelectorAll("[data-btn]")
 const btnRipple = function (event) {
     this.style.setProperty("--top", `${event.offsetY}px`)
@@ -44,4 +44,18 @@ const btnRipple = function (event) {
 }
 
 addEventOnElements(btn, "mousemove", btnRipple)
+
+// show back to top button after 500px scroll
+const topBtn = document.querySelector("[data-top]")
+const showBtn = function () {
+    if (window.scrollY > 500){
+        topBtn.classList.add("active")
+    }
+    else{
+        topBtn.classList.remove("active")
+    }
+}
+
+window.addEventListener("scroll", showBtn)
+
 
