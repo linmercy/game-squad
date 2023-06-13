@@ -544,6 +544,12 @@ font-size: var(--fontSize-3);
 /* news section */
 .news{
   .container{
+    .text{
+      display: flex;
+      place-items: center;
+      margin: auto;
+    }
+
     .newsList{
       display: grid;
       gap: 30px;
@@ -1036,6 +1042,12 @@ font-size: var(--fontSize-3);
   .header{
     .container{
       max-width: 1200px;
+    }
+  }
+
+  .section{
+    .text{
+      margin-block-end: 60px;
     }
   }
 }
